@@ -20,7 +20,7 @@ if($mysqli -> connect_error){
     $correo = $_POST["correo"];
     $telefono = $_POST["telefono"];
 
-    $sql = "insert into cliente values('".$nombre"', '".$identificacion"', '".$correo"', '".$telefono"')";
+    $sql = "insert into cliente values('".$nombre."', '".$identificacion."', '".$correo."', '".$telefono."')";
     $mysqli -> query($sql);
     echo"Se registraron los datos correctamente.";
 }
