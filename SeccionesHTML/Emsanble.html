@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="website icon" type="png" href="https://i.ibb.co/Htcywhn/llave-inglesa.png">
+    <link rel="stylesheet" href="/SeccionesCSS/Emsanble.css">
+    <title>Emsamblado</title>
+</head>
+<body>
+    <section class="Mantenimiento">
+        <div class="descripcion">
+            <p class="parrafo">Gracias por confiar en nosotros</p>
+            
+            <li>CPU</li>
+            <br>
+            <li>REFRIGUERADOR DE CPU</li>
+            <br>
+            <li>PLACA BASE</li>
+            <br>
+            <li>MEMORIA</li>
+            <br>
+            <li>TARJETA GRAFICA</li>
+            <br>
+            <li>DISCO DURO</li>
+            <br>
+            <li>SISTEMAS DE ALIMENTACION</li>
+            <br>
+            <li>CAJA</li>
+            <br>
+            <li>PERIFERICOS</li>
+            <br>
+            <img src="https://i.ibb.co/BggnV1q/mantenimiento.png" alt="Mantenimiento" height="100px">
+        
+            <p class="Precio" id="Precio">$ 350.000</p>
+        </div>
+    </section>
+
+    <section class="formulario">
+
+        <form action="../include/conexion.php" method="post" id="formulario" >
+
+            <label for=""> Nombre Completo</label>
+            <input type="text" placeholder="Nombre" required id="nombres" name="nombre">
+
+            <label for="">Identificacion</label>
+            <input type="number" placeholder="Cc." required id="identifica" name="identificacion">
+
+
+            <label for=""> Email</label>
+            <input type="Email" placeholder="@gmail.com" required id="gmail" name="correo">
+
+            <label for="">Celular</label>
+            <input type="number" placeholder="(XX) XXX XXX XXXX" required id="celular" name="telefono">
+
+            <input type="submit" value="CapturandoDatos" class="boton"/>
+        </form>
+        <img src="https://i.ibb.co/tqp03Mk/ltda-removebg-preview.png" alt="LTDA" height="120PX">
+
+    </section>
+
+
+    <section class="container" id="Compra">
+        <h2>Resumen Compra</h2>
+        <p>Cliente: </p><p id="name" class="id"></p> 
+        <p>Nit: </p><p id="Cedula" class="id"></p>
+        <p>Gmail: </p><p id="correo" class="id"></p>
+        <p>Contacto: </p><p id="phone" class="id"></p>
+    </section>
+
+    <section class="carrito">
+        <img src="https://i.ibb.co/WDtPysK/seguro.png" alt="carritoCompras" >
+    </section>
+    
+</body>
+
+<script src="/Js/Logica.js"></script>
+    
+</body>
+</html>

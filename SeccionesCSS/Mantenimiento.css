@@ -1,0 +1,138 @@
+body{
+    font-family: 'Oswald', sans-serif;
+    background: linear-gradient( #fff 30%,#839ADE );
+    
+}
+.parrafo{
+    text-align: center;
+    font-size: 22px;
+}
+
+.Mantenimiento{
+    font-size: 15px;
+    height: 470px;
+    width: 460px;
+    padding: 15px;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    margin: 0px 0 50px  200px;
+    display: inline-block;
+}
+
+.Mantenimiento img{
+    margin-left: 330px;
+}
+
+.Precio{
+    font-size: 40px;
+    display: inline;
+    margin-left: 10px;
+    
+}
+
+.formulario{
+    display: inline-block;
+    height: 470px;
+    width: 460px;
+    padding: 15px;
+    margin: 30px 0 50px  160px;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    
+}
+
+.formulario form{
+    margin-bottom: 50px;
+}
+
+form label{
+    display: block;
+    font-size: 15px;
+    padding: 10px;
+    margin-left: 12px;
+}
+
+form input{
+    height: 20px;
+    width: 380px;
+    margin-left: 20px;
+}
+
+.formulario .radio{
+    margin-left: 40px;
+}
+.boton{
+    display: block;
+    height: 40px;
+    width: 250px;
+    font-size: 25px;
+    margin-top: 35px;
+    margin-left: 100px;
+}
+
+.boton:hover{
+    background: green;
+    transition: .2ms;
+    color: white;
+    box-shadow: green 1px 1px 20px 1px;
+}
+
+.container{
+    display: inline-block;
+    padding: 3px;
+    width: 30%;
+    height: 300px;
+    margin-left: 200px;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+}
+.container h2{
+    text-align: center;
+    font-size: 20px;
+}
+
+.container p{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+.id{
+    font-size: 12px;
+}
+
+.carrito{
+    display: inline-block;
+}
+.carrito img{
+    margin-left: 50px;
+    height: 150px;
+    width: 150px;
+
+    animation: correr 5s alternate infinite;
+}
+
+@keyframes correr{
+    0%{
+        left: 0;
+        opacity: .5;
+    }
+    30%{
+        transform: translateX(600px); 
+    }
+    50%{
+        opacity: .4;
+        
+    }
+    100%{
+        left: 100vh;
+        opacity: 0;
+        
+    }
+}
+
+
+

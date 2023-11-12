@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mantenimiento</title>
-    <link rel="stylesheet" href="/StylsSecciones/Mantenimiento.css">
+    <link rel="website icon" type="png" href="https://i.ibb.co/Htcywhn/llave-inglesa.png">
+    <link rel="stylesheet" href="/SeccionesCSS/Mantenimiento.css">
 </head>
 <body>
+    
     <section class="Mantenimiento">
         <div class="descripcion">
             <p class="parrafo">Gracias por confiar en nosotros</p>
@@ -30,36 +32,52 @@
             <li>Instalaciones y mas.</li>
             <br>
             <img src="https://i.ibb.co/BggnV1q/mantenimiento.png" alt="Mantenimiento" height="100px">
-
-            <p class="Precio">$ 350.000</p>
-
+        
+            <p class="Precio" id="Precio">$ 350.000</p>
         </div>
     </section>
 
     <section class="formulario">
 
-        <form action="" id="formulario" name="formulario" >
-            <label for=""> Nombres</label>
-            <input type="text" placeholder="Nombre" required>
+        <form action="../include/conexion.php" id="formulario" name="formulario" method="post">
+            
+            <label for=""> Nombre Completo</label>
+            <input type="text" placeholder="Nombre" required id="nombres" name="nombre">
 
-            <label for=""> Apellidos</label>
-            <input type="text" placeholder="Apellidos" required>
+            <label for="">Identificacion</label>
+            <input type="number" placeholder="Cc." required id="identifica" name="identificacion">
+
 
             <label for=""> Email</label>
-            <input type="Email" placeholder="@GMAIL.COM" required>
+            <input type="Email" placeholder="@gmail.com" required id="gmail" name="correo">
 
             <label for="">Celular</label>
-            <input type="number" placeholder="XXX XXX XXXX" required >
+            <input type="number" placeholder="(XX) XXX XXX XXXX" required id="celular" name="telefono">
+
+            <input type="submit" value="CapturandoDatos" class="boton"/>
         </form>
 
-        <label class="radio" for="efectivo"><input type="radio" name="efectivo" value="efectivo" id="efectivo" >Efectivo</label>
-            
-        <label class="radio" for="Tarjeta-Credito"><input type="radio" name="credito" value="credito" id="Tarjeta-Credito">Tarjeta Credito</label>
+       
 
-        <button class="boton">Registrar compra</button>
         <img src="https://i.ibb.co/tqp03Mk/ltda-removebg-preview.png" alt="LTDA" height="120PX">
+
     </section>
 
+
+    <section class="container" id="Compra">
+        <h2>Resumen Compra</h2>
+        <p>Cliente: </p><p id="name" class="id"></p> 
+        <p>Nit: </p><p id="Cedula" class="id"></p>
+        <p>Gmail: </p><p id="correo" class="id"></p>
+        <p>Contacto: </p><p id="phone" class="id"></p>
+    </section>
+
+    <section class="carrito">
+        <img src="https://i.ibb.co/WDtPysK/seguro.png" alt="carritoCompras" >
+    </section>
     
 </body>
+
+<script src="/Js/Logica.js"></script>
+
 </html>

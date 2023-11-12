@@ -94,6 +94,11 @@ li{
     text-align: center;
 }
 
+.articulosOficiles:active{
+    box-shadow: #fff 2px 2px 30px 3px;
+    transition: 0.1ms;
+}
+
 .articulosPrincipales:hover{
     box-shadow: black 2px 2px 30px 5px;
     transition: .1ms;
@@ -124,7 +129,7 @@ li{
     height: 80px;
     left: 5%;
     animation-duration: 3s;
-    animation-delay: 3s;
+    animation-delay: 1s;
 }
 
 .burbuja:nth-child(2){
@@ -161,7 +166,7 @@ li{
     width: 110px;
     height: 110px;
     left: 60%;
-    animation-duration: 4s;
+    animation-duration: 2s;
 }
 
 .burbuja:nth-child(7){
@@ -181,8 +186,8 @@ li{
 .burbuja:nth-child(9){
     width: 120px;
     height: 120px;
-    left: 90%;
-    animation-duration: 4s;
+    left: 88%;
+    animation-duration: 2s;
 }
 
 .burbuja:nth-child(10){
@@ -203,7 +208,7 @@ li{
 }
 
 .mapa{
-    height: 400px;
+    height: 300px;
     width: 840px;
     margin: 80px 0 30px 450px;
     
@@ -235,18 +240,7 @@ li{
     }
 }
 
-@keyframes movimiento{
-    0%{
-        transform: translateY(0);
-    }
-    50%{
-        transform: translateY(30px);
-    }
-    100%{
-        transform: translateY(0);
-    }
 
-}
 
 
 
